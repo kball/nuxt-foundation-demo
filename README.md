@@ -1,22 +1,4 @@
-# nuxt-foundation-demo
+# Nuxt with Foundation integration
 
-> Nuxt.js Demo with Foundation
-
-## Build Setup
-
-``` bash
-# install dependencies
-$ npm install # Or yarn install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+A simple example of modifying the Nuxt boilerplate to integrate Foundation. For more information about the changes, 
+check out [this blog post](https://zendev.com/2018/05/04/adding-scss-libraries-like-foundation-to-nuxt.html).
