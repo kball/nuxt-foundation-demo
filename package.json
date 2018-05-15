@@ -13,6 +13,8 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "foundation-sites": "^6.4.3",
+    "motion-ui": "^1.2.3",
     "nuxt": "^1.0.0"
   },
   "devDependencies": {
@@ -20,6 +22,8 @@
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
-    "eslint-plugin-vue": "^4.0.0"
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^6.0.6"
   }
 }

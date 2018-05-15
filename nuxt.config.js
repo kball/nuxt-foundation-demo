@@ -13,6 +13,9 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  css: [
+    { lang: 'scss', src: '@/assets/scss/app.scss' },
+  ],
   /*
   ** Customize the progress bar color
   */
@@ -32,6 +35,16 @@ module.exports = {
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })
+      }
+      for (const rule of config.module.rules) {
+        if (rule.use) {
+          for (const use of rule.use) {
+            if (use.loader === 'sass-loader') {
+              use.options = use.options || {};
+              use.options.includePaths = ['node_modules/foundation-sites/scss', 'node_modules/motion-ui/src'];
+            }
+          }
+        }
       }
     }
   }
